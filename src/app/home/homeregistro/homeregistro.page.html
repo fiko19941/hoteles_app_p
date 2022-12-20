@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>RESGISTRO TURING</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>NOMBRE COMPLETO</ion-label>
+      <ion-input placeholder="Enter text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>NUMERO DE DOCUMENTO</ion-label>
+      <ion-input type="number" placeholder="000"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Password input</ion-label>
+      <ion-input type="password" value="password"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>CORREO ELETRONICO</ion-label>
+      <ion-input type="email" placeholder="email@domain.com"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>NUMERO DE TELEFONO</ion-label>
+      <ion-input type="tel" placeholder="888-888-8888"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <section class="enlace-ingreso">
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active"><ion-button expand="block" class="boton" >Guardar</ion-button></a>
+
+  </section>
+
+</ion-content>

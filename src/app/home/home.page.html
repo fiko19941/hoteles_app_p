@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      HOTELES BUENAVENTURA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">TURING</ion-title>
+    </ion-toolbar>
+  </ion-header>
+   <ion-text slot="start">HOTELES BUENAVENTURA</ion-text>
+   <ion-card>
+    <img alt="Marca de Buenaventura" src="https://pbs.twimg.com/media/FMZ8sJQXwAgiJCE?format=jpg&name=900x900"/>
+    <ion-card-header class="header-login">
+      <ion-card-title>INICIO DE SECCIÓN</ion-card-title>
+      <ion-card-subtitle class="tamaño-letra">Inicia sesión con tu cuenta Turing</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item class="box-form">
+        <ion-label>
+          <ion-icon name="mail-outline"></ion-icon>
+        </ion-label>
+        <ion-input placeholder=" Email" [value]=""></ion-input>
+      </ion-item>
+
+      <ion-item class="box-form">
+        <ion-label>
+          <ion-icon name="keypad-outline"></ion-icon>
+        </ion-label>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <section class="enlace-ingreso">
+        <a [routerLink]="['./homemenu']" routerLinkActive="router-link-active"><ion-button expand="block" class="boton">Ingresar</ion-button></a>
+
+        <p>¿Aun no tienes cuenta Turing? <a [routerLink]="['./homeregistro']" routerLinkActive="router-link-active">Registrate</a></p>
+      </section>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
