@@ -8,7 +8,7 @@
     <ion-list lines="full">
       
       <ion-item>
-        <ion-label>Hoteles Turing</ion-label>
+        <ion-label routerLink="/hoteles">Hoteles Turing</ion-label>
       </ion-item>
       <ion-item>
           <ion-label>Perfil Turing</ion-label>
@@ -30,6 +30,17 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-    Tap the button in the toolbar to open the menu.
+      <ion-card>
+        <img src=""/>
+        <ion-card-content>
+          <ion-card-title class="mensaje_reserva" color="warning">
+            Reserva tu hotel  <span>aqui!!</span> 
+          </ion-card-title>
+          <ion-img src="../../../assets/playa_1.jpg"></ion-img>
+          <ion-button class="hoteles" routerLink="/hoteles" expand="block" fill="clear" shape="round">
+            Ir Hoteles
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
   </ion-content>
 </div>

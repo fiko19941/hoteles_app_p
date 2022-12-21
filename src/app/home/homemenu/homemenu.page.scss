@@ -1,0 +1,20 @@
+.mensaje_reserva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ion-card-content.ios.card-content-ios.hydrated {
+    padding: 0;
+    /* width: 100%; */
+}
+
+ion-card.ios.hydrated {
+    margin: 0;
+}
+
+.hoteles{
+    background-color: black;
+    color: white;
+}

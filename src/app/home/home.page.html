@@ -22,22 +22,26 @@
 
     <ion-card-content>
 
-      <ion-item class="box-form">
+      <form [formGroup]="formularioLogin" (ngSubmit)="login()">
+       
+        
+        <ion-item class="box-form">
         <ion-label>
           <ion-icon name="mail-outline"></ion-icon>
         </ion-label>
-        <ion-input placeholder=" Email" [value]=""></ion-input>
+        <ion-input formControlName="correo" placeholder=" Email" [value]=""></ion-input>
       </ion-item>
 
       <ion-item class="box-form">
         <ion-label>
           <ion-icon name="keypad-outline"></ion-icon>
         </ion-label>
-        <ion-input type="password" placeholder="Password"></ion-input>
+        <ion-input formControlName="contrasenia" type="password" placeholder="Password"></ion-input>
       </ion-item>
+    </form>
 
       <section class="enlace-ingreso">
-        <a [routerLink]="['./homemenu']" routerLinkActive="router-link-active"><ion-button expand="block" class="boton">Ingresar</ion-button></a>
+        <ion-button (click)="login()" expand="block" class="boton">Ingresar</ion-button>
 
         <p>¿Aun no tienes cuenta Turing? <a [routerLink]="['./homeregistro']" routerLinkActive="router-link-active">Registrate</a></p>
       </section>
